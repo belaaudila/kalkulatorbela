@@ -10,13 +10,13 @@
 
 <div class="container">
     <div class="header-icons">
-        <button class="icon-btn">🕒</button>
-        <button id="iconResult" class="icon-btn" onclick="applyFromIcon()">⌨️</button>
+        <button class="icon-btn"></button>
+        <button id="iconResult" class="icon-btn" onclick="applyFromIcon()"></button>
     </div>
 
     <div class="user-identity">
         <p>Project Kalkulator</p>
-        <h2>Bela, Syakila & Mifta</h2>
+        <h2>Bela Syakila & Mifta</h2>
     </div>
 
     <div class="display-area">
@@ -59,8 +59,20 @@
     </div>
 
     <div id="storyPanel">
-        <textarea id="storyInput" placeholder="Contoh: Budi beli 5 apel, lalu beli lagi 3. Totalnya berapa?"></textarea>
+        <textarea id="storyInput" placeholder="Contoh: Aina beli 5 apel, lalu beli lagi 3. Totalnya berapa?"></textarea>
         <button class="solve-btn" onclick="solveStory()">Jawaban</button>
+    </div>
+</div>
+
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span>Hasil Perhitungan</span>
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p id="modalText"></p>
+        </div>
     </div>
 </div>
 
